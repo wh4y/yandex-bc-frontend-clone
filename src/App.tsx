@@ -7,7 +7,11 @@ const App: FC = () => {
 
     return (
         <main className={'relative h-[2000px] bg-code-wallpaper'}>
-            <Background/>
+            <Background>
+                <div className={'bg-transparent h-[500px] relative text-white text-8xl'}>
+                    JOJO
+                </div>
+            </Background>
         </main>
     );
 }

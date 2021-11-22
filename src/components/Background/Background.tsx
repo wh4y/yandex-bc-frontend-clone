@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {FC} from 'react';
 
-const Background = () => {
-
+const Background: FC = ({children}) => {
+debugger
     const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
         const X = e.pageX;
         const Y = e.pageY;
@@ -10,7 +10,9 @@ const Background = () => {
     }
 
     return (
-        <div onMouseMove={handleMouseMove} className={'absolute w-full h-full'}/>
+        <div onMouseMove={handleMouseMove} className={'absolute w-full h-full top-0 left-0'}>
+            {children}
+        </div>
     );
 }
 
