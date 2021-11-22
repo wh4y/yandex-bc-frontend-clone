@@ -3,7 +3,11 @@ module.exports = {
     purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
     darkMode: false, // or 'media' or 'class'
     theme: {
-        extend: {},
+        extend: {
+            backgroundImage: {
+                'code-wallpaper': 'url("https://pbs.twimg.com/profile_banners/109950549/1498650323/1500x500")'
+            }
+        },
     },
     variants: {
         extend: {},
