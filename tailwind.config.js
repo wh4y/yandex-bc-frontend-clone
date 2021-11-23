@@ -8,7 +8,17 @@ module.exports = {
                 'code-wallpaper': 'url("https://pbs.twimg.com/profile_banners/109950549/1498650323/1500x500")'
             },
             fontFamily: {
-                'main': ['"YS Text"','Helvetica','Arial','sans-serif']
+                'main': ['YS Text', 'Helvetica', 'Arial', 'sans-serif']
+            },
+            maxHeight: {
+                'fit': 'fit-content',
+            },
+            height: {
+                'fit': 'fit-content',
+                'max': 'max-content',
+            },
+            width: {
+                'fit': 'fit-content',
             }
         },
     },

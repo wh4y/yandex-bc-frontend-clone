@@ -14,9 +14,9 @@ const Header = () => {
         <header
             className={'fixed flex w-full h-20 ' +
             'items-center justify-center ' +
-            'text-xl ' +
-            'font-bold font-main ' +
-            `${isScrolled ? 'bg-white text-black' : 'bg-transparent text-white'}`}>
+            'text-xl z-50 transition duration-200 ' +
+            'font-bold border-b-[1px] border-transparent ' +
+            `${isScrolled ? 'bg-white text-black border-gray-200' : 'bg-transparent text-white'}`}>
             <div className={'flex justify-between w-[78%]'}>
                 <div className={'relative flex h-7'}>
                     <img
@@ -27,8 +27,8 @@ const Header = () => {
                         className={'h-full'}/>
                 </div>
                 <div className={'flex font-normal text-[.75em]'}>
-                    <span className={'inline-block mr-4'}>Команда фронтенда</span>
-                    <span>Команда бекенда</span>
+                    <span className={'inline-block mr-4  hover:text-red-500'}><a href={'#'}>Команда фронтенда</a></span>
+                    <span className={'hover:text-red-500'}><a href={'#'}>Команда бекенда</a></span>
                 </div>
             </div>
         </header>

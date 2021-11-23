@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+input:checked ~ label {
+    @apply rounded-full border-[1px] border-solid border-gray-500
+}
+
+input:checked ~ label > span {
+    @apply border-none
+}
+
+label {
+    @apply rounded-full border-[1px] border-solid border-transparent
+}
