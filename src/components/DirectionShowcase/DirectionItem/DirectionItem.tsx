@@ -20,7 +20,7 @@ const DirectionItem: FC<IProps> = ({title, description, tags}) => {
                     }
                 </p>
             </article>
-            <button className={'rounded bg-[#3878be] text-white px-3 py-2 w-fit'}>
+            <button className={'rounded hover:bg-[#326cab] hover:text-gray-200 bg-[#3878be] text-white px-3 py-2 w-fit'}>
                 Подробнее
             </button>
         </div>

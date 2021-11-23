@@ -49,7 +49,7 @@ const initialState: IInitialState = {
             name: 'Социально значимый сервис',
         },
     ],
-    selected: 'all',
+    selected: 'Всё',
 }
 
 export const filterReducer = createReducer(
