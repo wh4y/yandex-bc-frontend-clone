@@ -1,7 +1,7 @@
-export const setSelected = (mark: string) => ({
+export const setSelected = (name: string) => ({
     type: 'SET_SELECTED',
     payload: {
-        mark,
+        name,
     }
 });
 

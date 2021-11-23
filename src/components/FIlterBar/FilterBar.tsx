@@ -12,7 +12,7 @@ const FilterBar: FC<IProps> = ({filterItems}) => {
             <form className={'flex w-[66%] justify-center mb-16'}>
                 <fieldset className={'flex flex-wrap justify-center'}>
                     {
-                        filterItems.map(item => <FilterItem name={item.name} mark={item.mark}/>)
+                        filterItems.map(item => <FilterItem name={item.name}/>)
                     }
                 </fieldset>
             </form>
@@ -21,7 +21,7 @@ const FilterBar: FC<IProps> = ({filterItems}) => {
 }
 
 
-const mapStateToProps = (state: RootState) => ({filterItems: state.filterItems});
+const mapStateToProps = (state: RootState) => ({filterItems: state.filter.filterItems});
 
 const connector = connect(mapStateToProps);
 
