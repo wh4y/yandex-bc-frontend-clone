@@ -8,8 +8,8 @@ interface IProps extends ConnectorProps {
 
 const FilterBar: FC<IProps> = ({filterItems}) => {
     return (
-        <div className={'text-[1.1em] relative flex justify-center items-start pt-24'}>
-            <form className={'flex w-[66%] justify-center mb-16'}>
+        <div className={'md-:text-[1.1em] xs:text-[.9em] relative flex justify-center items-start xs:pt-16 md-:pt-24'}>
+            <form className={'flex md-:w-[66%] xs:w-[90%] justify-center mb-16'}>
                 <fieldset className={'flex flex-wrap justify-center'}>
                     {
                         filterItems.map(item => <FilterItem name={item.name}/>)

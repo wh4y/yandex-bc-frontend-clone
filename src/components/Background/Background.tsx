@@ -9,7 +9,7 @@ const Background: FC = ({children}) => {
             const X = e.pageX;
             const Y = e.pageY;
             // @ts-ignore
-            ref.current!.style.background = `radial-gradient(circle at ${X}px ${Y}px, rgba(5, 0, 0, 65%),rgba(10, 0, 0, 70%) 5%, #000 15%)`;
+            ref.current!.style.background = `radial-gradient(circle at ${X}px ${Y}px, rgba(5, 0, 0, 65%),rgba(10, 0, 0, 70%) 20vh, #000 40vh)`;
         })
     }, [])
 

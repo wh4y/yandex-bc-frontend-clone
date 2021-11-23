@@ -23,7 +23,7 @@ const FilterItem: FC<IProps> = ({name, selected}) => {
                 id={`filter-${name}`}
                 className={'w-0'}
             />
-            <label htmlFor={`filter-${name}`} className={'px-7 py-3 cursor-pointer'}>
+            <label htmlFor={`filter-${name}`} className={'md-:px-7 xs:px-3 py-3 cursor-pointer'}>
                 <span className={'whitespace-nowrap border-b-[1px] border-dotted border-blue-500'}>{name}</span>
             </label>
         </div>
